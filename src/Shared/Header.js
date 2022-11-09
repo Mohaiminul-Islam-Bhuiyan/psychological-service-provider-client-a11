@@ -4,12 +4,12 @@ const Header = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-xl">Shuvro</a>
             </div>
             <div className="flex-none gap-2">
                 <ul className="menu menu-horizontal p-0">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
+                    <li><a>My Reviews</a></li>
+                    <li><a>Add Service</a></li>
                 </ul>
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
