@@ -5,6 +5,7 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage'
 import Home from '../Pages/Home/Home'
 import AllServices from '../Pages/Home/Services/AllServices'
 import Login from '../Pages/Login/Login'
+import MyReviews from '../Pages/MyReviews/MyReviews'
 import MakeReview from '../Pages/ServiceDetails/MakeReview'
 import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails'
 import Signup from '../Pages/Signup/Signup'
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
             {
                 path: '/allservices',
                 element: <AllServices></AllServices>
+            },
+            {
+                path: '/myreviews',
+                element: <MyReviews></MyReviews>
             }
         ]
     }
