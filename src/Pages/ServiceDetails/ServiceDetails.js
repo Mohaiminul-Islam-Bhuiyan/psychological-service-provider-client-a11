@@ -3,7 +3,6 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { useLoaderData } from 'react-router-dom';
 import MakeReview from './MakeReview';
-import Reviews from './Reviews';
 
 
 const ServiceDetails = () => {
@@ -26,7 +25,6 @@ const ServiceDetails = () => {
                     </div>
                 </div>
             </div>
-            <Reviews></Reviews>
             <MakeReview></MakeReview>
         </div>
     );
