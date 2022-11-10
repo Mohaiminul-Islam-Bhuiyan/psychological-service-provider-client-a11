@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
 import { Link } from 'react-router-dom'
 
-const Services = () => {
+const AllServices = () => {
 
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('http://localhost:5000/allservices')
             .then(res => res.json())
             .then(data => setServices(data))
     })
 
     return (
-        <div>
+        <div className='my-5'>
             <div className='text-center mb-4'>
                 <p className="text-2xl font-bold text-orange-600">Services</p>
                 <h2 className="text-5xl font-semibold">Our Services for YOU</h2>
@@ -26,9 +26,8 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
-            <button className='btn btn-primary mt-3'><Link to='/allservices'>See All</Link></button>
         </div>
     );
 };
 
-export default Services;
+export default AllServices;
