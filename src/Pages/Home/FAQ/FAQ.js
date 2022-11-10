@@ -2,7 +2,7 @@ import React from 'react';
 
 const FAQ = () => {
     return (
-        <div className='mx-20'>
+        <div className='mx-20 mt-5'>
             <h1 className='text-3xl font-bold'>FAQ</h1>
             <div className="collapse mt-5 mb-1">
                 <input type="checkbox" className="peer" />
