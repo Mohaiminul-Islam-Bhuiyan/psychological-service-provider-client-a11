@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify'
+import { MdOutlinePsychology } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom'
 import { AuthContext } from '../contexts/AuthProvider';
 
@@ -16,7 +17,7 @@ const Header = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Shuvro</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl"><MdOutlinePsychology></MdOutlinePsychology>Shuvro</Link>
             </div>
             <div className="flex-none gap-2">
                 <ul className="menu menu-horizontal p-0">
