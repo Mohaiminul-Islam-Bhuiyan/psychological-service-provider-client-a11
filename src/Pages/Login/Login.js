@@ -17,8 +17,9 @@ const Login = () => {
 
     const handleSubmit = event => {
         event.preventDefault()
-        const email = event.target.email.value
-        const password = event.target.password.value
+        const form = event.target
+        const email = form.email.value
+        const password = form.password.value
 
         login(email, password)
             .then(result => {
@@ -26,6 +27,8 @@ const Login = () => {
                 navigate(from, { replace: true })
                 console.log(result.user);
             })
+            .catch(err => console.error(err))
+        form.reset()
     }
 
     const handleGoogleSignIn = () => {

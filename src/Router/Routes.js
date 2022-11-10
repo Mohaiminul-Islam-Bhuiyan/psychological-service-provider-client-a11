@@ -5,8 +5,10 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage'
 import Home from '../Pages/Home/Home'
 import AllServices from '../Pages/Home/Services/AllServices'
 import Login from '../Pages/Login/Login'
+import MakeReview from '../Pages/ServiceDetails/MakeReview'
 import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails'
 import Signup from '../Pages/Signup/Signup'
+import PrivateRoute from './PrivateRoute'
 
 const router = createBrowserRouter([
     {
