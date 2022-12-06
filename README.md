@@ -9,3 +9,5 @@
 * MongoDb CRUD operation has been implimented in this project
 * a special feature react-photo-view has been used
 * environment variable has been used to hide confidential informations 
+
+* live link: https://shuvro-c0ff7.web.app/
